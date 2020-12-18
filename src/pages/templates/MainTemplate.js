@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import './MainTemplate.css'
 
 const MainTemplate = props => {
@@ -7,8 +8,12 @@ const MainTemplate = props => {
             <header className='main-template__header'>
                 <nav className='main-template__main-nav'>
                     <ul>
-                        <li>home</li>
-                        <li>calendar</li>
+                        <li>
+                            <Link to='/'>home</Link>
+                        </li>
+                        <li>
+                            <Link to='/calendar'>calendar</Link>
+                        </li>
                     </ul>
                 </nav>
             </header>

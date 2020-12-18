@@ -8,3 +8,9 @@ export const setEndOfShift = time => ({
     type: SHIFT_END,
     payload: {time},
 })
+
+export const CUSTOM_DATE = 'CUSTOM_DATE'
+export const setCustomDate = date => ({
+    type: CUSTOM_DATE,
+    payload: {date},
+})
